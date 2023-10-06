@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://voodoo-sandbox.myshopify.com/products.json?limit=461">
+    <script src="./js/main.js" defer></script>
+    <script src="./js/cart.js" defer></script>
+    
+    
+    <title>Voodoo Test</title>
+</head>
+<body>
+<div class="content-page">
+
+
+    <nav class="nav-bar flex items-center justify-between p-4">
+      <div class="logo flex items-center space-x-2">
+          <img src="./img/LOGOFULL.svg" alt="Лого" width="250" height="98">
+      </div>
+      <div class="clientMenu flex items-center space-x-4">
+          <button class="drawer text-2xl" id="cart-button">
+              <img src="./img/shopping-cart.svg" alt="drawer" width="24" height="24">
+          </button>
+          <a href="#" class="bg-black rounded p-2 text-white font-semibold hover:bg-gray-400 transition duration-300">Sing-up</a>
+          
+      </div>
+  </nav>
+
+  
+  <div class="cart-popup"  id="cart-popup">
+    <div class="w-96 border-b-2 border-orange-50 m-8">
+      <button class="absolute top-8 right-16 font-bold text-orange-50 text-2xl" id="cart-close-button">✕</button>
+      <h3 class="text-orange-50 text-2xl mb-2">Shopping cart</h3>
+    </div>
+      <div class="w-96 mx-8" id="cart-container"></div>
+
+      <div class="w-96 border-t-2 border-orange-50 m-8" id="cart-total">
+        <span class="text-orange-50 text-2xl mt-16">Total</span> <span id="cart-total-text" class="text-orange-50 text-xl absolute right-8 mb-2">0.00 KR.</span>
+      </div>
+  </div>
+
+  <div class="alert bg-black text-orange-50 rounded mx-auto mt-24 mb-8 py-4 px-6 flex justify-between items-center">
+      <div class="flex items-center">
+        <span class="m-2"><img src="./img/alert-circle.svg" alt="alert-circle"></span>
+        <span class="text-orange-50 font-semibold m-2">ALPHA</span>
+        <span class="text-center text-orange-50 text-clip overflow-hidden m-2">Important info regarding our service</span>
+      </div>
+      
+      <div class="flex items-center">
+        <span class="text-orange-50 mr-2"><img src="./img/chevron-down.svg" alt="chevron-down"></span>
+      </div>
+    </div>
+    
+  
+    <div class="flex flex-wrap justify-center" id="product-container"></div> 
+      
+
+
+  <div class="pagination flex justify-center mt-4 mx-auto" id="pagination"></div>
+
+  <footer class="bg-white p-4 mt-24 ">
+    <div class="flex flex-wrap justify-center">
+      <div w-full md:w-1/2 lg:w-1/4>
+        <img src="./img/LOGO.svg" alt="Логотип" class="w-16 h-16 m-16"></div>
+        <div class="space-between grid grid-cols-3 grid-flow-row gap-8 font-semibold tracking-widest">
+        <div class="w-full md:w-1/2 lg:w-1/4 p-4">
+          <ul>
+            <li><a href="#" class="text-black uppercase hover:bg-gray-400">Faq</a></li>
+            <li><a href="#" class="text-black uppercase hover:bg-gray-400">Returns</a></li>
+            <li><a href="#" class="text-black uppercase hover:bg-gray-400">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="w-full md:w-1/2 lg:w-1/4 p-4">
+          <ul>
+            <li><a href="#" class="text-black uppercase hover:bg-gray-400">terms & Conditions</a></li>
+            <li><a href="#" class="text-black uppercase hover:bg-gray-400">Privacy policy</a></li>
+            <li><a href="#" class="text-black uppercase hover:bg-gray-400">cookie Policy</a></li>
+            <li><a href="#" class="text-black uppercase hover:bg-gray-400">Cookie settings</a></li>
+          </ul>
+        </div>
+            
+        <div class="w-full md:w-1/2 lg:w-1/4 p-4">
+          <ul>
+            <li><a href="#" class="text-black uppercase hover:bg-gray-400">About second chance</a></li>
+            <li><a href="#" class="text-black uppercase hover:bg-gray-400">Career</a></li>
+            <li><a href="#" class="text-black uppercase hover:bg-gray-400">Facebook</a></li>
+            <li><a href="#" class="text-black uppercase hover:bg-gray-400">Instagram</a></li>
+          </ul>
+        </div>
+        </div>
+    </div>
+</footer>
+
+
+  </div>>
+</body>
+</html>
